@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+
+
+:root {
+    --blue: #1A37A7;
+
+
+}
+
+/* navbar style start */
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+}
+
+.nav-heading {
+    font-size: 40px;
+    color: var(--blue);
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.nav-child1 {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.search-bar {
+    /* background-color: rgb(224, 21, 21); */
+    width: 60%;
+    height: 40px;
+    padding: 5px;
+    position: relative;
+
+} 
+.navlist{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+}
+.nav-anchor{
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav-link:hover{
+    border-bottom: 2px solid #1A37A7;
+
+}
+
+#search-icon {
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    font-size: 20px;
+    z-index: 99;
+
+}
+
+#Search-input {
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    font-size: 15px;
+    width: 80%;
+    outline: none;
+    border: none;
+
+}
+
+#slider-icon {
+    position: absolute;
+    right: 3%;
+    top: 25%;
+    z-index: 9;
+}
+
+.nav-child3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20PX;
+
+}
+
+.nav-child3-icon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    padding: 5px 6px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+.nav-child3-icon:hover {
+    background-color: grey;
+    color: white;
+}
+
+.icon-link {
+    color: black;
+    text-decoration: none;
+}
+
+/* navbar responsive style start here  */
+
+@media only screen and (max-width: 910px) {
+    .search-bar {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .nav-child1 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: normal;
+    }
+
+
+    .navbar {
+        height: 150px;
+
+    }
+
+    .nav-heading {
+        margin-bottom: -40px;
+        margin-top: 40px;
+    }
+
+    .search-bar {
+        width: 100%;
+        border-radius: 5px;
+        margin-left: 50%;
+        margin-top: 5px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .nav-child1 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .navbar {
+        height: 150px;
+
+    }
+
+    .nav-heading {
+        margin-bottom: -40px;
+        margin-top: 40px;
+        font-size: 30px;
+
+
+    }
+    .icon-child3{
+        display: none;
+    }
+
+    .nav-child3-icon {
+        display: none;
+    }
+
+}
+
+
+
+/* navbar responsive style end here  */
+
+/* navbar style :end */
+
+
+.Section1{
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    font-family: sans-serif;
+}
+.section1-child1{
+    width: 30%;
+    height: 400px;
+    background-color: whitesmoke;
+    padding: 30px 30px;
+    border-radius: 15px;
+
+
+}
+
+
+.section1-child2{
+    width: 30%;
+    height: 400px;
+    background-color: antiquewhite;
+
+}
+
+.section1-child3{
+    width: 30%;
+    height: 400px;
+    background-color: antiquewhite;
+
+}
+.sec1-child1-gchild1{
+    background-color: whitesmoke;
+    border-radius: 15px;
+    width: 100%;
+    height: 48%;
+    margin-bottom: 10px;
+    padding: 20px 30px;
+}
+.sec1-child1-gchild2{
+    background-color: aqua;
+    width: 100%;
+    height: 48%;
+    margin-bottom: 10px;
+}
+.shop-section1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.shop-20{
+    background-color: #1A37A7;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 15px 12px;
+    color: white;
+
+}
+.table-img{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-top: -50px;
+}
+.price{
+    margin-top: 50px;
+}
