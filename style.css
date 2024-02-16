@@ -200,8 +200,8 @@ body {
 
 .Section1{
     width: 100%;
-    height: 400px;
-    background-color: red;
+
+    /* background-color: red; */
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -223,14 +223,14 @@ body {
 .section1-child2{
     width: 30%;
     height: 400px;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 
 }
 
 .section1-child3{
     width: 30%;
     height: 400px;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
 
 }
 .sec1-child1-gchild1{
@@ -242,7 +242,7 @@ body {
     padding: 20px 30px;
 }
 .sec1-child1-gchild2{
-    background-color: aqua;
+    background-color: whitesmoke;
     width: 100%;
     height: 48%;
     margin-bottom: 10px;
@@ -282,11 +282,24 @@ body {
 
 .card-section{
     display: grid;
-    grid-template-columns: auto auto auto auto ;
-    gap: 20px;
-    margin-left: 20px;
+    grid-template-columns: auto auto auto ;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
+@media only screen and (max-width: 990px) {
+    .card-section{
+        
+        grid-template-columns: auto auto ;
 
+    }
+}
+@media only screen and (max-width: 620px) {
+    .card-section{
+        grid-template-columns: auto ;
+
+    }
+}
 
 
 
